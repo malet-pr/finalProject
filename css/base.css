@@ -1,0 +1,120 @@
+body {
+  background-color:  burlywood;
+  color: rgb(64, 57, 66);
+}
+header{
+  background-color: brown;
+  font-size: 2em;
+  text-align: center;
+  vertical-align: middle;
+  color: bisque;
+  height: 120px;
+}
+header img {
+  width: 30%;
+  height: 120px;
+}
+footer{
+  background-color: brown;
+  font-size: 13pt;
+  text-align: center;
+  color: bisque;
+  padding: 10px;
+  clear: both;
+}
+nav{
+  clear: both;
+  background-color: orangered;
+  height: 40px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+nav li {
+  float: left;
+  padding-left: 20px;
+}
+nav li a{
+  text-decoration: none;
+}
+main{
+  clear: both;
+}
+h1 {
+  font-size: 2em;
+  padding-right: 10pt;
+  padding-left: 10pt;
+}
+h2 {
+  font-size: 1.75em;
+  padding-right: 10pt;
+  padding-left: 10pt;
+}
+h3 {
+  font-size: 1.5em;
+  padding-right: 10pt;
+  padding-left: 10pt;
+}
+p {
+  font-family: verdana;
+  font-size: 16px;
+  text-align: justify;
+  padding-right: 10pt;
+  padding-left: 10pt;
+}
+#div1 {
+  width: 150px;
+  border: 2px solid rgb(116, 12, 12);
+  background-color: orangered;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  float: left;
+}
+#div1 a{
+  text-decoration: none;
+}
+a {
+  color: bisque;
+}
+a:hover{
+  background-color: bisque;
+  color: darkgoldenrod;
+}
+a:active {
+  background-color: bisque;
+  color: rgb(116, 12, 12);
+}
+#two-columns {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+} 
+.cuerpo{
+  background-color: bisque; 
+}
+.cuerpo p{
+  margin-left: 150px;
+}
+.cuerpo ul {
+  list-style-type: circle;
+}
+.cuerpo li{
+  clear: both;
+  margin-left: 150px;
+}
+.cuerpo ol{
+  list-style-type: lower-roman;
+}
+.cuerpo li a {
+  color: darkgoldenrod;
+}
+.cuerpo li a:hover {
+  color:  orangered;
+}
+
+

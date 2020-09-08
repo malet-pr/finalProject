@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico Final - CONTACT</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <header>
+        <img src="img/henry-perks-BJXAxQ1L7dI-unsplash.jpg" alt="Imagen de mapa" style="float: left;">
+        <img src="img/melinda-gimpel-5Ne6mMQtIdo-unsplash.jpg" alt="Imagen de contacto" style="float: right;">
+        <br> CONTACTO
+   </header>
+
+   <nav>
+       <ul>
+           <li><a href="index.html">INICIO</a></li>
+           <li><a href="about.html">SOBRE NOSOTROS</a></li>
+           <li><a href="services.html">NUESTROS SERVICIOS</a></li>
+           
+       </ul>
+   </nav>
+
+   <br><br>
+   <main>
+    <div id="two-columns">
+  
+        <article  style="padding: 40px;">
+            <h3>Dónde estamos</h3>
+            <p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3284.0625572827917!2d-58.4129261!3d-34.6025796!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1599346645495!5m2!1ses-419!2sar" 
+                width="300" height="250" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </p>
+        </article>
+
+        <article>
+            <form action="">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="apellido">  <br> <br>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="nombre">
+                <p> <label for="area">Área</label>
+                    <select id="area" name="area">
+                        <option value="economia">Economía</option>
+                        <option value="finanzas">Finanzas</option>
+                        <option value="analytics">Analytics</option>
+                        <option value="ai">Inteligencia Artificial</option>
+                    </select>
+                </p>    
+                <p> 
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha">
+                    <br><br>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email"> <br><br>
+                </p>
+                <p> Mensaje<br>
+                    <textarea name="message" rows="5" cols="50" style="padding: 5px;"></textarea>
+                </p>  
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </p>
+            </form>
+        </article>
+    </div>
+   </main>
+   <br><br>
+
+   <footer>
+       Autora: <a href="mailto:nmalet@gmail.com">Nuria Malet Quintar</a>
+   </footer>
+
+</body>
+</html>
