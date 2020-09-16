@@ -1,15 +1,5 @@
 html{
-  font-size: 16px;
-}
-@media screen and (min-width: 320px) {
-  html {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-  }
-}
-@media screen and (min-width: 1000px) {
-  html {
-    font-size: 22px;
-  }
+  font-size: min(max(1rem, 4vw), 22px); 
 } 
 body {
   background-color:  burlywood;
@@ -17,41 +7,85 @@ body {
 }
 header{
   background-color: brown;
+  height: max(10vw,20vh);
+  size: 60%;
+  float: left;
+  color: bisque;
+}
+#header-title{
   font-size: 2rem;
   text-align: center;
-  vertical-align: middle;
-  color: bisque;
-  height: 120px;
+  padding-left: 1.2rem;
 }
-header img {
-  width: 25%;
-  height: 120px;
+#header-img{
+  width: 20%;
+  height: max(10vw,20vh);
+}
+@media only screen and (max-width: 1000px) {
+  #header-title{
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #header-title{
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #header-title{
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #header-title{
+    font-size: 0.6rem;
+  }
 }
 footer{
   background-color: brown;
-  font-size: 13px;
+  font-size: 0.8rem;
   text-align: center;
   color: bisque;
-  padding: 10px;
+  padding: 0.5em;
   clear: both;
 }
 nav{
   clear: both;
   background-color: orangered;
-  height: 40px;
+  height: 10vh;
 }
 nav ul {
+  text-align: center;
   list-style-type: none;
-  margin: 0px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin: 0;
+  padding: 0;
 }
 nav li {
-  float: left;
-  padding-left: 20px;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5em;
+} 
+@media only screen and (max-width: 1000px) {
+  nav li{
+    font-size: 0.9rem;
+  }
 }
-nav li a{
+@media only screen and (max-width: 800px) {
+  nav li{
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  nav li{
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  nav li{
+    font-size: 0.6rem;
+  }
+}
+.nav li a{
   text-decoration: none;
 }
 main{
