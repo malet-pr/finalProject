@@ -6,39 +6,37 @@ body {
   color: rgb(64, 57, 66);
 }
 header{
+  height: 6rem;
   background-color: brown;
-  height: max(10vw,20vh);
-  size: 60%;
-  float: left;
   color: bisque;
 }
 #header-title{
   font-size: 2rem;
   text-align: center;
-  padding-left: 1.2rem;
+  padding: 2rem;
 }
 #header-img{
   width: 20%;
-  height: max(10vw,20vh);
+  height: 6rem;
 }
 @media only screen and (max-width: 1000px) {
   #header-title{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   #header-title{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   #header-title{
-    font-size: 0.8rem;
+    font-size: 1.3rem;
   }
 }
 @media only screen and (max-width: 400px) {
   #header-title{
-    font-size: 0.6rem;
+    font-size: 1.2rem;
   }
 }
 footer{
@@ -52,7 +50,7 @@ footer{
 nav{
   clear: both;
   background-color: orangered;
-  height: 10vh;
+  height: 2rem;
 }
 nav ul {
   text-align: center;
@@ -82,10 +80,10 @@ nav li {
 }
 @media only screen and (max-width: 400px) {
   nav li{
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
-.nav li a{
+nav li a{
   text-decoration: none;
 }
 main{
