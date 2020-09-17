@@ -1,8 +1,8 @@
-html{
-  font-size: min(max(1rem, 4vw), 22px); 
-} 
 * {
   box-sizing: border-box;
+} 
+html{
+  font-size: min(max(1rem,4vh),22px);
 }
 body {
   background-color:  burlywood;
@@ -12,6 +12,7 @@ header{
   height: 6rem;
   background-color: brown;
   color: bisque;
+  margin-top: -1.7rem;
 }
 #header-title{
   font-size: 2rem;
@@ -92,36 +93,35 @@ nav li a{
 main{
   clear: both;
 }
-h1 {
-  font-size: 2rem;
-  padding-right: 10pt;
-  padding-left: 10pt;
-}
-h2 {
-  font-size: 1.75rem;
-  padding-right: 10pt;
-  padding-left: 10pt;
-}
-h3 {
-  font-size: 1.5em;
-  padding-right: 10pt;
-  padding-left: 10pt;
-}
 p {
   font-family: verdana;
-  font-size: 16px;
+  font-size: 1em;
   text-align: justify;
-  padding-right: 10pt;
-  padding-left: 10pt;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
 }
 #div1 {
-  width: 150px;
+  width: 8rem;
   border: 2px solid rgb(116, 12, 12);
   background-color: orangered;
-  padding: 10px;
+  padding: 0.5em;
   text-align: center;
-  font-size: 15px;
   float: left;
+}
+@media only screen and (max-width: 1000px) {
+  p, #div1{
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  p, #div1{
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  p, #div1{
+    font-size: 0.7rem;
+  }
 }
 #div1 a{
   text-decoration: none;
