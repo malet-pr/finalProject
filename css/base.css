@@ -1,6 +1,9 @@
 html{
   font-size: min(max(1rem, 4vw), 22px); 
 } 
+* {
+  box-sizing: border-box;
+}
 body {
   background-color:  burlywood;
   color: rgb(64, 57, 66);
@@ -134,11 +137,26 @@ a:active {
   background-color: bisque;
   color: rgb(116, 12, 12);
 }
-#two-columns {
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  -moz-column-count: 2; /* Firefox */
-  column-count: 2;
-} 
+.mapa {
+  padding-left: 6em;;
+  width: 50%;
+  float: left;
+}
+.formulario {
+  padding-left: 2em;
+  width: 50%;
+  float: right;
+}
+@media only screen and (max-width: 800px) {
+  .mapa{
+    width: 100%;
+    margin: auto;
+  }
+  .formulario{
+    width: 100%;
+    margin: auto;
+  }
+}
 .cuerpo{
   background-color: bisque; 
 }
