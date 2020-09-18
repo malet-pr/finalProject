@@ -9,15 +9,17 @@ body {
   color: rgb(64, 57, 66);
 }
 header{
+  position: fixed;
   height: 6rem;
   background-color: brown;
   color: bisque;
-  margin-top: -1.7rem;
+  margin-top: -0.35rem;
+  margin-left: -0.30rem;
 }
 #header-title{
   font-size: 2rem;
   text-align: center;
-  padding: 2rem;
+ /* padding: 2rem; */
 }
 #header-img{
   width: 20%;
@@ -48,10 +50,16 @@ footer{
   font-size: 0.8rem;
   text-align: center;
   color: bisque;
+  margin-left: -0.30rem;
+  margin-right: -1rem;
   padding: 0.5em;
   clear: both;
 }
 nav{
+  position: fixed;
+  margin-top: 5.65rem;
+  margin-left: -0.30rem;
+  width: 100%;
   clear: both;
   background-color: orangered;
   height: 2rem;
@@ -92,6 +100,7 @@ nav li a{
 }
 main{
   clear: both;
+  padding-top: 8rem;
 }
 p {
   font-family: verdana;
