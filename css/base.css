@@ -100,6 +100,12 @@ p {
   padding-right: 0.5em;
   padding-left: 0.5em;
 }
+p a{
+  color: orangered;
+}
+p a:hover{
+  color: brown;
+}
 #div1 {
   width: 8rem;
   border: 2px solid rgb(116, 12, 12);
