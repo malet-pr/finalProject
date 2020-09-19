@@ -1,19 +1,29 @@
-html{
-  font-size: min(max(1rem, 4vw), 22px); 
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,500;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&family=Kufam:ital,wght@0,500;1,600;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
 } 
+html{
+  font-size: min(max(1rem,4vh),22px);
+}
 body {
   background-color:  burlywood;
   color: rgb(64, 57, 66);
 }
 header{
+  position: fixed;
   height: 6rem;
   background-color: brown;
   color: bisque;
+  margin-top: -0.35rem;
+  margin-left: -0.30rem;
 }
 #header-title{
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
-  padding: 2rem;
+  font-family: 'Grenze Gotisch', cursive;
+  margin-top: 0.5em;
 }
 #header-img{
   width: 20%;
@@ -21,22 +31,22 @@ header{
 }
 @media only screen and (max-width: 1000px) {
   #header-title{
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
 }
 @media only screen and (max-width: 850px) {
   #header-title{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (max-width: 650px) {
   #header-title{
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 }
 @media only screen and (max-width: 400px) {
   #header-title{
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
 }
 footer{
@@ -44,10 +54,17 @@ footer{
   font-size: 0.8rem;
   text-align: center;
   color: bisque;
+  font-family: 'Kufam', cursive;
+  margin-left: -0.30rem;
+  margin-right: -1rem;
   padding: 0.5em;
   clear: both;
 }
 nav{
+  position: fixed;
+  margin-top: 5.65rem;
+  margin-left: -0.30rem;
+  width: 100%;
   clear: both;
   background-color: orangered;
   height: 2rem;
@@ -60,27 +77,28 @@ nav ul {
 }
 nav li {
   display: inline-block;
+  font-family: 'Kufam', cursive;
   font-size: 1rem;
   padding: 0.5em;
 } 
 @media only screen and (max-width: 1000px) {
-  nav li{
-    font-size: 0.9rem;
+  nav li, footer{
+    font-size: 0.9em;
   }
 }
 @media only screen and (max-width: 800px) {
-  nav li{
-    font-size: 0.8rem;
+  nav li, footer{
+    font-size: 0.8em;
   }
 }
 @media only screen and (max-width: 650px) {
-  nav li{
-    font-size: 0.7rem;
+  nav li, footer{
+    font-size: 0.7em;
   }
 }
 @media only screen and (max-width: 400px) {
-  nav li{
-    font-size: 0.7rem;
+  nav li, footer{
+    font-size: 0.7em;
   }
 }
 nav li a{
@@ -88,37 +106,43 @@ nav li a{
 }
 main{
   clear: both;
-}
-h1 {
-  font-size: 2rem;
-  padding-right: 10pt;
-  padding-left: 10pt;
-}
-h2 {
-  font-size: 1.75rem;
-  padding-right: 10pt;
-  padding-left: 10pt;
-}
-h3 {
-  font-size: 1.5em;
-  padding-right: 10pt;
-  padding-left: 10pt;
+  padding-top: 8rem;
 }
 p {
   font-family: verdana;
-  font-size: 16px;
+  font-size: 1em;
   text-align: justify;
-  padding-right: 10pt;
-  padding-left: 10pt;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+p a{
+  color: orangered;
+}
+p a:hover{
+  color: brown;
 }
 #div1 {
-  width: 150px;
+  width: 8rem;
   border: 2px solid rgb(116, 12, 12);
   background-color: orangered;
-  padding: 10px;
+  padding: 0.5em;
   text-align: center;
-  font-size: 15px;
   float: left;
+}
+@media only screen and (max-width: 1000px) {
+  p, #div1{
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  p, #div1{
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  p, #div1{
+    font-size: 0.7rem;
+  }
 }
 #div1 a{
   text-decoration: none;
@@ -140,12 +164,22 @@ a:active {
   float: left;
 }
 .formulario {
-  margin-top: -16rem;
   padding-left: 2em;
   width: 50%;
   float: right;
 }
-.mapa a{
-  color: brown;
+@media only screen and (max-width: 800px) {
+  .mapa{
+    width: 100%;
+    margin: auto;
+  }
+  .formulario{
+    width: 100%;
+    margin: auto;
+  }
 }
+
+
+
+
 
