@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,500;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&family=Kufam:ital,wght@0,500;1,600;1,800&display=swap');
+
 * {
   box-sizing: border-box;
 } 
@@ -17,9 +20,10 @@ header{
   margin-left: -0.30rem;
 }
 #header-title{
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
- /* padding: 2rem; */
+  font-family: 'Grenze Gotisch', cursive;
+  margin-top: 0.5em;
 }
 #header-img{
   width: 20%;
@@ -27,22 +31,22 @@ header{
 }
 @media only screen and (max-width: 1000px) {
   #header-title{
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
 }
 @media only screen and (max-width: 850px) {
   #header-title{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (max-width: 650px) {
   #header-title{
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 }
 @media only screen and (max-width: 400px) {
   #header-title{
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
 }
 footer{
@@ -50,6 +54,7 @@ footer{
   font-size: 0.8rem;
   text-align: center;
   color: bisque;
+  font-family: 'Kufam', cursive;
   margin-left: -0.30rem;
   margin-right: -1rem;
   padding: 0.5em;
@@ -72,27 +77,28 @@ nav ul {
 }
 nav li {
   display: inline-block;
+  font-family: 'Kufam', cursive;
   font-size: 1rem;
   padding: 0.5em;
 } 
 @media only screen and (max-width: 1000px) {
-  nav li{
-    font-size: 0.9rem;
+  nav li, footer{
+    font-size: 0.9em;
   }
 }
 @media only screen and (max-width: 800px) {
-  nav li{
-    font-size: 0.8rem;
+  nav li, footer{
+    font-size: 0.8em;
   }
 }
 @media only screen and (max-width: 650px) {
-  nav li{
-    font-size: 0.7rem;
+  nav li, footer{
+    font-size: 0.7em;
   }
 }
 @media only screen and (max-width: 400px) {
-  nav li{
-    font-size: 0.7rem;
+  nav li, footer{
+    font-size: 0.7em;
   }
 }
 nav li a{
