@@ -1,0 +1,59 @@
+html{
+    font-size: min(max(1rem, 4vw), 22px); 
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: [x0] 20vw [x1] 20vw [x2] 20vw [x3] 20vw [x4] 20vw [x5];
+    grid-template-rows: [y0] 21vh [y1] 7vh [y2];
+}
+.header {
+    background-color: brown;
+    grid-column: x0 / x5;
+    grid-row: y0 / y1;
+    color: bisque;
+}
+.nav {
+      background-color: orange;
+      grid-column: x0 / x5;
+      grid-row: y1 / y2;
+      color: black;
+}  
+.content {
+    background-color: darkorange;
+    grid-column: x0 / x3;
+    color: black;
+}    
+.sidebar {
+    background-color: darkgoldenrod;
+    grid-column: x3 / x5;
+    color: bisque;
+}  
+.footer {
+    background-color: brown;
+    grid-column: x0 / x5;
+    color: bisque;
+}
+#div1 {
+    width: 150px;
+    border: 2px solid rgb(116, 12, 12);
+    background-color: orangered;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    float: left;
+}
+#div1 a{
+    text-decoration: none;
+}
+a {
+    color: bisque;
+}
+a:hover{
+    background-color: bisque;
+    color: darkgoldenrod;
+}
+a:active {
+    background-color: bisque;
+    color: rgb(116, 12, 12);
+}
