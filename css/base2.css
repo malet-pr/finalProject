@@ -6,70 +6,57 @@
 } 
 html{
     font-size: min(max(1rem, 4vw), 22px); 
+    background-color:  burlywood;
+    color: rgb(64, 57, 66);
 }
-.grid {
-    display: grid;
-    grid-template-columns: [x0] 20vw [x1] 19vw [x2] 20vw [x3] 19vw [x4] 20vw [x5];
-    grid-template-rows: [y0] 21vh [y1] 7vh [y2];
-}
-.header {
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    background-color: brown;
+    height: 21vh;
+    width: 100%;
     top: 0vh;
     position: sticky;
+}
+.flex-container > div {
     background-color: brown;
     color: bisque;
-    grid-column: x1 / x4;
-    grid-row: y0 / y1;
+    text-align: center;
     font-size: 2.5rem;
     text-align: center;
+    font-family:'Grenze Gotisch', cursive;
     padding-top: 1rem;
-    font-family: 'Grenze Gotisch', cursive;
-}
-.header-imgR{
-    top: 0vh;
-    position: sticky;
-    grid-column: x0 / x1;
-    grid-row: y0 / y1;
-    background: url("../img/danielle-macinnes-IuLgi9PWETU-unsplash.jpg");
-    background-size: cover;
-}
-.header-imgL{
-    top: 0vh;
-    position: sticky;
-    grid-column: x4 / x5;
-    grid-row: y0 / y1;
-    background: url("../img/chris-liverani-9cd8qOgeNIY-unsplash.jpg");
-    background-size: cover;
 }
 @media only screen and (max-width: 1024px) {
-    .header{
+    .flex-container > div{
       font-size: 2.3rem;
       padding-top: 1.2rem;
     }
 }
 @media only screen and (max-width: 800px) {
-    .header{
+    .flex-container > div{
       font-size: 1.9rem;
       padding-top: 1.5rem;
     }
 }
 @media only screen and (max-width: 640px) {
-    .header{
+    .flex-container > div{
       font-size: 1.5rem;
       padding-top: 1.7rem;
     }
 }
 @media only screen and (max-width: 320px) {
-    .header{
+    .flex-container > div{
       font-size: 1rem;
       padding-top: 1.9rem;
     }
 }
-.nav {
+nav {
     top: 21vh;
     position: sticky;
     background-color: orangered;
-    grid-column: x0 / x5;
-    grid-row: y1 / y2;
+    height: 7vh;
+    width: 100%;
 }  
 nav ul {
     text-align: center;
@@ -105,37 +92,32 @@ nav li{
 nav li a{
     text-decoration: none;
 }
-.content {
-    grid-column: x0 / x3;
+/*
+main {
     background-color:  burlywood;
     color: rgb(64, 57, 66);
-}    
-.sidebar {
-    grid-column: x3 / x5;
-    background-color:  burlywood;
-    color: rgb(64, 57, 66);
-}
+} 
+*/   
 h1 {
     font-size: 2rem;
-    padding-right: 10pt;
-    padding-left: 10pt;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 }
 h2 {
     font-size: 1.75rem;
-    padding-right: 10pt;
-    padding-left: 10pt;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 }
 h3 {
     font-size: 1.5em;
-    padding-right: 10pt;
-    padding-left: 10pt;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 }
 p {
     font-family: verdana;
-    font-size: 16px;
     text-align: justify;
-    padding-right: 10pt;
-    padding-left: 10pt;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 }
 #div1 {
     width: 6rem;
@@ -158,17 +140,6 @@ a:active {
     background-color: bisque;
     color: rgb(116, 12, 12);
 }
-.map {
-    grid-column: x0 / x2; 
-    background-color: darkorange;
-    color: black;
-} 
-.form{
-    grid-column: x2 / x5; 
-    background-color: darkorange;
-    color: black;
-}
-/* cambiar despues */
 .mapa {
     padding-left: 6em;;
     width: 50%;
@@ -179,10 +150,8 @@ a:active {
     width: 50%;
     float: right;
 }
-/* hasta acá*/
-.footer {
+footer {
     background-color: brown;
-    grid-column: x0 / x5;
     color: bisque;
     font-size: 0.8rem;
     padding: 0.5em;

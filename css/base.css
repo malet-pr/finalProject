@@ -1,185 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,500;1,600;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&family=Kufam:ital,wght@0,500;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,500;1,600;1,800&display=swap');
 
 * {
   box-sizing: border-box;
 } 
 html{
-  font-size: min(max(1rem,4vh),22px);
+    font-size: min(max(1rem, 4vw), 22px); 
 }
-body {
-  background-color:  burlywood;
-  color: rgb(64, 57, 66);
+.grid {
+    display: grid;
+    grid-template-columns: [x0] 20vw [x1] 19vw [x2] 20vw [x3] 19vw [x4] 20vw [x5];
+    grid-template-rows: [y0] 21vh [y1] 7vh [y2];
 }
-header{
-  position: fixed;
-  height: 6rem;
-  background-color: brown;
-  color: bisque;
-  margin-top: -0.35rem;
-  margin-left: -0.30rem;
+.header {
+    top: 0vh;
+    position: sticky;
+    background-color: brown;
+    grid-column: x0 / x5;
+    grid-row: y0 / y1;
+    color: bisque;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family:'Grenze Gotisch', cursive;
+    padding-top: 1rem;
 }
-#header-title{
-  font-size: 2.5rem;
-  text-align: center;
-  font-family: 'Grenze Gotisch', cursive;
-  margin-top: 0.5em;
+@media only screen and (max-width: 1024px) {
+    .header{
+      font-size: 2.3rem;
+      padding-top: 1.2rem;
+    }
 }
-#header-img{
-  width: 20%;
-  height: 6rem;
+@media only screen and (max-width: 800px) {
+    .header{
+      font-size: 1.9rem;
+      padding-top: 1.5rem;
+    }
 }
-@media only screen and (max-width: 1000px) {
-  #header-title{
-    font-size: 2.3rem;
-  }
+@media only screen and (max-width: 640px) {
+    .header{
+      font-size: 1.5rem;
+      padding-top: 1.7rem;
+    }
 }
-@media only screen and (max-width: 850px) {
-  #header-title{
-    font-size: 2rem;
-  }
+@media only screen and (max-width: 320px) {
+    .header{
+      font-size: 1rem;
+      padding-top: 1.9rem;
+    }
 }
-@media only screen and (max-width: 650px) {
-  #header-title{
-    font-size: 1.8rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  #header-title{
-    font-size: 1.7rem;
-  }
-}
-footer{
-  background-color: brown;
-  font-size: 0.8rem;
-  text-align: center;
-  color: bisque;
-  font-family: 'Kufam', cursive;
-  margin-left: -0.30rem;
-  margin-right: -1rem;
-  padding: 0.5em;
-  clear: both;
-}
-nav{
-  position: fixed;
-  margin-top: 5.65rem;
-  margin-left: -0.30rem;
-  width: 100%;
-  clear: both;
-  background-color: orangered;
-  height: 2rem;
-}
+.nav {
+    top: 21vh;
+    position: sticky;
+    background-color: orangered;
+    grid-column: x0 / x5;
+    grid-row: y1 / y2;
+}  
 nav ul {
-  text-align: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 nav li {
-  display: inline-block;
-  font-family: 'Kufam', cursive;
-  font-size: 1rem;
-  padding: 0.5em;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5em;
 } 
-@media only screen and (max-width: 1000px) {
-  nav li, footer{
-    font-size: 0.9em;
-  }
+@media only screen and (max-width: 1024px) {
+    nav li{
+      font-size: 0.9rem;
+    }
 }
 @media only screen and (max-width: 800px) {
-  nav li, footer{
-    font-size: 0.8em;
-  }
+    nav li{
+      font-size: 0.8rem;
+    }
 }
-@media only screen and (max-width: 650px) {
-  nav li, footer{
-    font-size: 0.7em;
-  }
+@media only screen and (max-width: 640px) {
+nav li{
+      font-size: 0.7rem;
+    }
 }
-@media only screen and (max-width: 400px) {
-  nav li, footer{
-    font-size: 0.7em;
-  }
+@media only screen and (max-width: 320px) {
+    nav li{
+      font-size: 0.7rem;
+    }
 }
 nav li a{
-  text-decoration: none;
+    text-decoration: none;
 }
-main{
-  clear: both;
-  padding-top: 8rem;
+.content {
+    grid-column: x0 / x3;
+    background-color:  burlywood;
+    color: rgb(64, 57, 66);
+}    
+.sidebar {
+    grid-column: x3 / x5;
+    background-color:  burlywood;
+    color: rgb(64, 57, 66);
+}
+h1 {
+    font-size: 2rem;
+    padding-right: 10pt;
+    padding-left: 10pt;
+}
+h2 {
+    font-size: 1.75rem;
+    padding-right: 10pt;
+    padding-left: 10pt;
+}
+h3 {
+    font-size: 1.5em;
+    padding-right: 10pt;
+    padding-left: 10pt;
 }
 p {
-  font-family: verdana;
-  font-size: 1em;
-  text-align: justify;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
-}
-p a{
-  color: orangered;
-}
-p a:hover{
-  color: brown;
+    font-family: verdana;
+    font-size: 16px;
+    text-align: justify;
+    padding-right: 10pt;
+    padding-left: 10pt;
 }
 #div1 {
-  width: 8rem;
-  border: 2px solid rgb(116, 12, 12);
-  background-color: orangered;
-  padding: 0.5em;
-  text-align: center;
-  float: left;
-}
-@media only screen and (max-width: 1000px) {
-  p, #div1{
-    font-size: 0.9rem;
-  }
-}
-@media only screen and (max-width: 800px) {
-  p, #div1{
-    font-size: 0.8rem;
-  }
-}
-@media only screen and (max-width: 650px) {
-  p, #div1{
-    font-size: 0.7rem;
-  }
+    width: 6rem;
+    border: 2px solid rgb(116, 12, 12);
+    background-color: orangered;
+    padding: 0.5rem;
+    text-align: center;
 }
 #div1 a{
-  text-decoration: none;
+    text-decoration: none;
 }
 a {
-  color: bisque;
+    color: bisque;
 }
 a:hover{
-  background-color: bisque;
-  color: darkgoldenrod;
+    background-color: bisque;
+    color: darkgoldenrod;
 }
 a:active {
-  background-color: bisque;
-  color: rgb(116, 12, 12);
+    background-color: bisque;
+    color: rgb(116, 12, 12);
 }
+.map {
+    grid-column: x0 / x2; 
+    background-color: darkorange;
+    color: black;
+} 
+.form{
+    grid-column: x2 / x5; 
+    background-color: darkorange;
+    color: black;
+}
+/* cambiar despues */
 .mapa {
-  padding-left: 6em;;
-  width: 50%;
-  float: left;
+    padding-left: 6em;;
+    width: 50%;
+    float: left;
 }
 .formulario {
-  padding-left: 2em;
-  width: 50%;
-  float: right;
+    padding-left: 2em;
+    width: 50%;
+    float: right;
 }
-@media only screen and (max-width: 800px) {
-  .mapa{
-    width: 100%;
-    margin: auto;
-  }
-  .formulario{
-    width: 100%;
-    margin: auto;
-  }
+/* hasta acá*/
+.footer {
+    background-color: brown;
+    grid-column: x0 / x5;
+    color: bisque;
+    font-size: 0.8rem;
+    padding: 0.5em;
 }
-
-
-
-
-
