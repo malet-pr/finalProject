@@ -78,7 +78,7 @@ html{
     grid-row: y1 / y2;
     color: black;
     font-family: 'Kufam', cursive;
-}  
+} 
 .content {
     grid-column: x0 / x3;
     background-color:  burlywood;

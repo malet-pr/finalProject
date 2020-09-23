@@ -95,6 +95,9 @@ p {
 a {
   color: bisque;
 }
+p a{
+  color: brown;
+}
 a:hover{
   background-color: bisque;
   color: darkgoldenrod;
