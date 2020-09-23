@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&display=swap'); */
+
+@font-face{font-family: 'Grenze Gotisch';src:url("../css/fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf");}
+@font-face{font-family: "Kufam";src:url("../css/fonts/Kufam/Kufam-Italic-VariableFont_wght.ttf");}
 
 * {
   box-sizing: border-box;
