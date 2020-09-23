@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&display=swap');
+/*@ import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&display=swap'); */
+
+@font-face{font-family: 'Grenze Gotisch';src:url("../css/fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf");}
+@font-face{font-family: "Kufam";src:url("../css/fonts/Kufam/Kufam-Italic-VariableFont_wght.ttf");}
+
 
 * {
     box-sizing: border-box;
@@ -9,20 +13,62 @@ html{
 }
 .grid {
     display: grid;
-    grid-template-columns: [x0] 20vw [x1] 20vw [x2] 20vw [x3] 20vw [x4] 20vw [x5];
+    grid-template-columns: [x0] 20vw [x1] 19vw [x2] 20vw [x3] 19vw [x4] 20vw [x5];
     grid-template-rows: [y0] 21vh [y1] 7vh [y2];
 }
 .header {
     top: 0vh;
     position: sticky;
-    grid-column: x0 / x5;
-    background-color: brown;
+    grid-column: x1 / x4;
     grid-row: y0 / y1;
+    background-color: brown;
     color: bisque;
     font-size: 2.5rem;
     text-align: center;
     font-family:'Grenze Gotisch', cursive;
     padding-top: 1rem;
+}
+@media only screen and (max-width: 1024px) {
+    .header{
+      font-size: 2.3rem;
+      padding-top: 1.2rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .header{
+      font-size: 1.9rem;
+      padding-top: 1.5rem;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .header{
+      font-size: 1.5rem;
+      padding-top: 1.7rem;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .header{
+      font-size: 1rem;
+      padding-top: 1.9rem;
+    }
+}
+.img1{
+    top: 0vh;
+    position: sticky;
+    grid-column: x0 / x1;
+    grid-row: y0 / y1;
+    background-image:url('../img/bernd-klutsch-nE2HV5AUXFo-unsplash.jpg');
+    background-size: cover; 
+    background-position: center;
+}
+.img2{
+    top: 0vh;
+    position: sticky;
+    grid-column: x4 / x5;
+    grid-row: y0 / y1;
+    background-image:url('../img/sincerely-media-nGrfKmtwv24-unsplash.jpg');
+    background-size: cover; 
+    background-position: center;
 }
 .nav {
     top: 21vh;
