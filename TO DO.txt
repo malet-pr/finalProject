@@ -1,0 +1,10 @@
+TO DO
+
+TODOS
+agregar redes sociales al footer
+
+INDEX
+1) corregir el tema de las fotos en el grid, no pueden ir como fondo porque necesito que cambien
+en cada pagina
+2) agregar el aside
+
