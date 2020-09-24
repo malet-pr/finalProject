@@ -146,13 +146,12 @@ p {
 }
 
 #div1 {
-    width: 150px;
+    width: 8rem;
     border: 2px solid rgb(116, 12, 12);
     background-color: orangered;
-    padding: 10px;
+    padding: 0.5em;
     text-align: center;
-    font-size: 15px;
-    float: left;
+    border-radius: 25%;
 }
 #div1 a{
     text-decoration: none;
@@ -168,3 +167,12 @@ a:active {
     background-color: bisque;
     color: rgb(116, 12, 12);
 }
+.fa {
+    padding: 0 1rem;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa:hover{
+    opacity: 0.5;
+  }
