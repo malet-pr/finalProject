@@ -1,0 +1,186 @@
+@font-face{font-family: 'Grenze Gotisch';src:url("../css/fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf");}
+@font-face{font-family: "Kufam";src:url("../css/fonts/Kufam/Kufam-Italic-VariableFont_wght.ttf");}
+
+* {
+  box-sizing: border-box;
+} 
+html{
+    font-size: min(max(1rem, 4vw), 22px); 
+    background-color:  burlywood;
+    color: rgb(64, 57, 66);
+}
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    background-color: brown;
+    height: 21vh;
+    width: 100%;
+    top: 1.5vh;
+    position: sticky;
+}
+.flex-container > div {
+    background-color: brown;
+    color: bisque;
+    text-align: center;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family:'Grenze Gotisch', cursive;
+    padding-top: 1rem;
+}
+@media only screen and (max-width: 1024px) {
+    .flex-container > div{
+      font-size: 2.3rem;
+      padding-top: 1.2rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .flex-container > div{
+      font-size: 1.9rem;
+      padding-top: 1.5rem;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .flex-container > div{
+      font-size: 1.5rem;
+      padding-top: 1.7rem;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .flex-container > div{
+      font-size: 1rem;
+      padding-top: 1.9rem;
+    }
+}
+nav {
+    top: 22.5vh;
+    position: sticky;
+    background-color: orangered;
+    font-family: 'Kufam', cursive;
+    height: 7vh;
+    width: 100%;
+}  
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5em;
+}
+nav li a{
+  text-decoration: none;
+} 
+p {
+  font-family: verdana;
+  text-align: justify;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+a {
+    color: bisque;
+  }
+  p a{
+    color: brown;
+  }
+  a:hover{
+    background-color: bisque;
+    color: darkgoldenrod;
+  }
+  a:active {
+    background-color: bisque;
+    color: rgb(116, 12, 12);
+  }
+  @media only screen and (max-width: 1024px) {
+      nav li, p, footer{
+        font-size: 0.9rem;
+        padding: 0.4rem;
+      }
+  }
+  @media only screen and (max-width: 800px) {
+      nav li, p, footer{
+        font-size: 0.8rem;
+        padding: 0.3rem;
+      }
+  }
+  @media only screen and (max-width: 640px) {
+  nav li, p, footer{
+        font-size: 0.7rem;
+        padding: 0.2rem;
+      }
+  }
+  @media only screen and (max-width: 320px) {
+      nav li, p, footer{
+        font-size: 0.7rem;
+        padding: 0.1rem;
+      }
+  }  
+  footer {
+      clear: both;
+      background-color: brown;
+      color: bisque;
+      font-family: 'Kufam', cursive;
+      padding: 0.5em;
+  }
+  .fa {
+    padding: 0 1rem;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .fa:hover{
+    opacity: 0.5;
+  }
+  .sidebar {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 8rem;
+    background-color: orangered;
+    height: auto;
+    overflow: auto;
+    font-family: 'Kufam', cursive;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: bisque;
+    padding: 0.7rem;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: brown;
+    color: bisque;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: burlywood;
+    color: brown;
+  }
+  
+  div.content {
+    margin-left: 10rem;
+    padding: 1rem;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
