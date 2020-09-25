@@ -127,7 +127,7 @@ nav li, #div1, p, footer{
 }
 @media only screen and (max-width: 320px) {
     nav li, #div1, p, footer{
-      font-size: 0.7rem;
+      font-size: 0.6rem;
       padding: 0.1rem;
     }
 }  
