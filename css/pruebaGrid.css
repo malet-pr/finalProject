@@ -116,7 +116,12 @@ html{
 }
 .nav li a{
   text-decoration: none;
+  color: bisque;
 } 
+.nav li a:hover{
+    background-color: bisque;
+    color: darkgoldenrod;
+}
 @media only screen and (max-width: 1024px) {
     .nav li, #div1, p, .footer{
       font-size: 0.8rem;
