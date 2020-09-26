@@ -84,6 +84,9 @@ html{
     grid-column: x0 / x4;
     background-color:  burlywood;
     color: rgb(64, 57, 66);
+    text-align: center;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 }    
 .sidebar {
     background-color: darkgoldenrod;
@@ -144,12 +147,14 @@ p {
     }
 }
 #div1 {
-    width: 8rem;
+    width: 6rem;
     border: 2px solid rgb(116, 12, 12);
     background-color: orangered;
+    color: bisque;
     padding: 0.5em;
     text-align: center;
     border-radius: 25%;
+    margin: auto;
 }
 #div1 a{
     text-decoration: none;
@@ -178,30 +183,81 @@ h2 {
     padding-left: 0.5rem;
 }
 @media only screen and (max-width: 1024px) {
-  h2{
-    font-size: 1.0rem;
-    padding-right: 0.4rem;
-    padding-left: 0.4rem;
-  }
+    h2{
+        font-size: 1.0rem;
+        padding-right: 0.4rem;
+        padding-left: 0.4rem;
+    }
 }
 @media only screen and (max-width: 800px) {
-  h2{
-    font-size: 0.9rem;
-    padding-right: 0.3rem;
-    padding-left: 0.3rem;
-  }
+    h2{
+        font-size: 0.9rem;
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+    }
 }
 @media only screen and (max-width: 640px) {
-  h2{
-    font-size: 0.8rem;
-    padding-right: 0.2rem;
-    padding-left: 0.2rem;
-  }
+    h2{
+        font-size: 0.8rem;
+        padding-right: 0.2rem;
+        padding-left: 0.2rem;
+    }
 }
 @media only screen and (max-width: 320px) {
-  h2{
-    font-size: 0.7rem;
-    padding-right: 0.1rem;
-    padding-left: 0.1rem;
-  }
+    h2{
+        font-size: 0.7rem;
+        padding-right: 0.1rem;
+        padding-left: 0.1rem;
+    }
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.columnA {
+    flex: 50%;
+    max-width: 50%;
+    padding: 1;
+}
+.columnB {
+    flex: 100%;
+    max-width: 100%;
+    padding: 1;
+}
+.columnA .columnB img {
+    margin-top: 0.3rem;
+    vertical-align: top;
+    width: 80%;
+    height: 80%;
+}
+@media screen and (max-width: 800px) {
+    .content{
+        grid-column: x0 / x6;
+    }
+    .sidebar{
+        grid-column: x0 / x6;
+    }
+    .columnB {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .content{
+        grid-column: x0 / x6;
+    }
+    .sidebar{
+        grid-column: x0 / x6;
+    }
+    .columnA {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .columnB {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+  
