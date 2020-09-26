@@ -83,12 +83,25 @@ p {
   padding-left: 0.5rem;
 }
 main {
-  width: 70%;
+  width: 65%;
   float: left;
+  text-align: justify;
 }
 aside {
-  width: 30%;
+  width: 35%;
   float: right;
+  vertical-align: auto;
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  main {
+    clear: both;
+    width: 100%;
+  }
+  aside {
+    clear: both;
+    width: 100%;
+  }
 }
 footer {
     clear: both;
@@ -139,6 +152,7 @@ h2 {
     font-size: 1.5rem;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+    text-align: left;
 }
 @media only screen and (max-width: 1024px) {
   h2{
@@ -190,4 +204,15 @@ h2 {
 }
 .fa:hover{
   opacity: 0.5;
+}
+.flex-container-row {
+  display: flex;
+  align-items: stretch;
+  min-height: 30vh;
+  max-height: fit-content;
+  width: 100%;
+  margin: 1rem 0.5rem;
+}
+.flex-container-row > div {
+  padding: 0;
 }
