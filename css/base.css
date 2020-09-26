@@ -107,10 +107,13 @@ aside {
   main {
     clear: both;
     width: 100%;
+    margin-bottom: 0%;
   }
   aside {
     clear: both;
     width: 100%;
+    margin-top: 0%;
+    padding-bottom: 2rem;
   }
 }
 footer {
@@ -223,11 +226,33 @@ h2 {
 .flex-container-row {
   display: flex;
   align-items: stretch;
-  min-height: 30vh;
+  min-height: 15vh;
   max-height: fit-content;
   width: 100%;
   margin: 1rem 0.5rem;
 }
 .flex-container-row > div {
   padding: 0;
+}
+div.card {
+  width: 10rem;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  background-color: bisque;
+}
+div.content {
+  color: brown;
+  padding: 0.5rem;
+  text-align: left;
+}
+div.content > hr.dotted {
+  border-top: 3px dotted brown;
+}
+@media only screen and (max-width: 1024px) {
+  div.card{
+    width: 80%;
+    border-radius: 5%;
+
+  }
 }
