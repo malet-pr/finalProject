@@ -273,7 +273,7 @@ div.content > hr.dotted {
   border-radius: 5%;
   position: absolute;
   z-index: 15;
-  bottom: 100%;
+  bottom: 25%;
   right: 25%;
   opacity: 0;
   transition-property: all;
