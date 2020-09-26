@@ -97,21 +97,10 @@ footer {
     font-family: 'Kufam', cursive;
     padding: 0.5em;
 }
-/* #div1 {
-  width: 8rem;
-  border: 2px solid rgb(116, 12, 12);
-  background-color: orangered;
-  padding: 0.5em;
-  text-align: center;
-  border-radius: 25%;
-}
-#div1 a{
-  text-decoration: none;
-} */
-a {
+nav a {
   color: bisque;
 }
-p a{
+a{
   color: brown;
 }
 a:hover{

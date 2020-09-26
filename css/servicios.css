@@ -79,10 +79,10 @@ p {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
-a {
+nav a {
     color: bisque;
 }
-p a{
+a{
   color: brown;
 }
 a:hover{
