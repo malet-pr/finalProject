@@ -87,11 +87,12 @@ html{
     text-align: center;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+    border-right: 3px solid bisque;
 }    
 .sidebar {
-    background-color: darkgoldenrod;
     grid-column: x4 / x6;
-    color: bisque;
+    background-color:  burlywood;
+    color: rgb(64, 57, 66);
     text-align: center;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -183,21 +184,22 @@ h2 {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem;
+
 }
 .columnA {
     flex: 50%;
-    max-width: 50%;
     padding: 1rem;
 }
 .columnB {
     flex: 100%;
-    max-width: 100%;
     padding: 1rem;
 }
-.columnA .columnB img {
-    margin-top: 0.3rem;
-    vertical-align: middle;
+div.card {
+    width: 85%;
+    margin: auto;
+    padding: 1rem 0;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media screen and (max-width: 1024px) {
     .content{
@@ -208,7 +210,6 @@ h2 {
     }
     .columnB {
         flex: 50%;
-        max-width: 50%;
     }
 }
 @media screen and (max-width: 600px) {
@@ -220,11 +221,9 @@ h2 {
     }
     .columnA {
         flex: 100%;
-        max-width: 100%;
     }
     .columnB {
         flex: 100%;
-        max-width: 100%;
     }
 }
 
