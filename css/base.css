@@ -82,7 +82,22 @@ p {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
-#div1 {
+main {
+  width: 70%;
+  float: left;
+}
+aside {
+  width: 30%;
+  float: right;
+}
+footer {
+    clear: both;
+    background-color: brown;
+    color: bisque;
+    font-family: 'Kufam', cursive;
+    padding: 0.5em;
+}
+/* #div1 {
   width: 8rem;
   border: 2px solid rgb(116, 12, 12);
   background-color: orangered;
@@ -92,7 +107,7 @@ p {
 }
 #div1 a{
   text-decoration: none;
-}
+} */
 a {
   color: bisque;
 }
@@ -179,13 +194,6 @@ h2 {
     margin: auto;
     width: 100%;
   }
-}
-footer {
-    clear: both;
-    background-color: brown;
-    color: bisque;
-    font-family: 'Kufam', cursive;
-    padding: 0.5em;
 }
 .fa {
   padding: 0 1rem;
