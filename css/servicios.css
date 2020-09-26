@@ -227,3 +227,33 @@ div.content {
     padding-left: 0.1rem;
   }
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 2rem;
+  height: 10rem;
+  background-color: orangered;
+  color: bisque;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  border-radius: 5%;
+  position: absolute;
+  z-index: 15;
+  bottom: 100%;
+  right: 25%;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+

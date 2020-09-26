@@ -128,6 +128,13 @@ footer {
   font-family: 'Kufam', cursive;
   padding: 0.5em;
 }
+.fa {
+  padding: 0 1rem;
+  width: auto;
+}
+.fa:hover{
+  opacity: 0.5;
+}
 nav a {
   color: bisque;
 }
@@ -216,13 +223,6 @@ h2 {
     width: 100%;
   }
 }
-.fa {
-  padding: 0 1rem;
-  width: auto;
-}
-.fa:hover{
-  opacity: 0.5;
-}
 .flex-container-row {
   display: flex;
   align-items: stretch;
@@ -253,6 +253,35 @@ div.content > hr.dotted {
   div.card{
     width: 80%;
     border-radius: 5%;
-
   }
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 2rem;
+  height: 10rem;
+  background-color: orangered;
+  color: bisque;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  border-radius: 5%;
+  position: absolute;
+  z-index: 15;
+  bottom: 100%;
+  right: 25%;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
