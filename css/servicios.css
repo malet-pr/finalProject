@@ -10,13 +10,15 @@ html{
   color: rgb(64, 57, 66);
 }
 .flex-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10;
   display: flex;
   align-items: stretch;
   background-color: brown;
   height: 21vh;
-  width: 100%;
-  top: 1.5vh;
-  position: sticky;
 }
 .flex-container > div {
   background-color: brown;
@@ -52,12 +54,14 @@ html{
   }
 }
 nav {
-  top: 22.5vh;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  top: 21vh;
+  right: 0;
+  z-index: 10;
   background-color: orangered;
   font-family: 'Kufam', cursive;
   height: 7vh;
-  width: 100%;
 }  
 nav ul {
   text-align: center;
@@ -119,6 +123,11 @@ nav li, p, footer, .sidebar{
 }  
 footer {
   clear: both;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
   background-color: brown;
   color: bisque;
   font-family: 'Kufam', cursive;
@@ -133,13 +142,14 @@ footer {
 }
 .sidebar {
   position: fixed;
-  margin: 0;
+  left: 0;
+  top: 28vh;
   padding: 0;
   width: 8rem;
   min-height: 60%;
   max-height: fit-content;
-  background-color: orangered;
   overflow: auto;
+  background-color: orangered;
   font-family: 'Kufam', cursive;
 }
 .sidebar a {
@@ -152,17 +162,17 @@ footer {
   background-color: brown;
   color: bisque;
 }
-
 .sidebar a:hover:not(.active) {
   background-color: burlywood;
   color: brown;
 }
-
 div.content {
+  position: relative;
+  top: 28vh;
   margin-left: 10rem;
+  margin-bottom: 2rem;
   padding: 1rem;
-  min-height: 100%;
-  max-height: fit-content;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 700px) {

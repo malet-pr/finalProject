@@ -13,13 +13,15 @@ html{
     color: rgb(64, 57, 66);
 }
 .flex-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
     display: flex;
     align-items: stretch;
     background-color: brown;
     height: 21vh;
-    width: 100%;
-    top: 0vh;
-    position: sticky;
 }
 .flex-container > div {
     background-color: brown;
@@ -55,12 +57,14 @@ html{
     }
 }
 nav {
+    position: fixed;
+    width: 100%;
     top: 21vh;
-    position: sticky;
+    right: 0;
+    z-index: 10;
     background-color: orangered;
     font-family: 'Kufam', cursive;
     height: 7vh;
-    width: 100%;
 }  
 nav ul {
     text-align: center;
@@ -79,10 +83,12 @@ nav li a{
 p {
   font-family: verdana;
   text-align: justify;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding: 0.5rem;
 }
 main {
+  margin-top: 28vh;
+  margin-left: 0;
+  margin-bottom: 2rem;
   width: 65%;
   float: left;
   text-align: justify;
@@ -90,6 +96,8 @@ main {
   max-height: fit-content;
 }
 aside {
+  margin-top: 28vh;
+  margin-left: 0;
   width: 35%;
   float: right;
   vertical-align: auto;
@@ -106,11 +114,16 @@ aside {
   }
 }
 footer {
-    clear: both;
-    background-color: brown;
-    color: bisque;
-    font-family: 'Kufam', cursive;
-    padding: 0.5em;
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: brown;
+  color: bisque;
+  font-family: 'Kufam', cursive;
+  padding: 0.5em;
 }
 nav a {
   color: bisque;
