@@ -285,3 +285,14 @@ div.content > hr.dotted {
   opacity: 1;
 }
 
+
+/*
+@media all and (orientation: portrait) { 
+    body { 
+        
+    }
+    ...
+    acá va el código a cambiar
+}
+*/ 
+
