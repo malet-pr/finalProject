@@ -2,32 +2,87 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo Práctico Final - ABOUT US</title>
-    <link href="css/base.css" rel="stylesheet" type="text/css">
-    <script src="https://kit.fontawesome.com/97359fe2a8.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit=no>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="css/pruebaNav.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/97359fe2a8.js" data-auto-replace-svg="nest" crossorigin="anonymous"></script>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,600&display=swap');
+        body{
+            background-color: burlywood;
+            padding-bottom: 2.5rem;
+            padding-top: 13rem;
+        }
+        nav {
+            background-color: orangered;
+            color: bisque;
+            font-family: 'Kufam', cursive;
+        }  
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+            background-color: brown;
+            color: bisque;
+            font-family: 'Kufam', cursive; 
+            padding: 0.5em;
+        }
+        .fa {
+            padding: 0 1rem;
+            width: auto;
+        }
+        .fa:hover{
+            opacity: 0.5;
+        }
+        .d-flex{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            height: 21vh;
+            background-color: brown;
+            color: bisque;
+            text-align: center;
+            font-size: clamp(1rem, -0.8750rem + 8.3333vw, 3.5rem);
+            text-align: center;
+            font-family:'Grenze Gotisch', cursive;
+        }
+    </style>
 </head>
 <body>
-    <header class="flex-container">
+    <div class="d-flex">
         <div style="flex-grow:1; background-image:url('img/kobu-agency-7okkFhxrxNw-unsplash.jpg');
         background-size: cover; background-position: center; color:transparent;">........</div>
-        <div style="flex-grow:3;">SOBRE NOSOTROS</div>
+        <div style="flex-grow:3; padding-top: 1rem;">SOBRE NOSOTROS</div>
         <div style="flex-grow:1; background-image:url('img/green-chameleon-s9CC2SKySJM-unsplash.jpg');
         background-size: cover; background-position: center; color:transparent;">........</div>
-    </header>
-
-    <nav>
-        <ul class="nav">
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="about.html">SOBRE NOSOTROS</a></li>
-            <li><a href="services.html">SERVICIOS</a></li>
-            <li><a href="publicaciones.html">PUBLICACIONES</a></li>
-            <li><a href="contact.html">CONTACTO</a></li>
-        </ul>
+    </div>  
+    
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="top: 21vh;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegacion"
+            aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navegacion">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html" style="color: bisque;">INICIO</a></li>
+            <li class="nav-item active"><a class="nav-link" href="about.html" style="color: burlywood;">SOBRE NOSOTROS</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html" style="color: bisque;">SERVICIOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="publicaciones.html" style="color: bisque;">PUBLICACIONES</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" style="color: bisque;">CONTACTO</a></li>
+          </ul>
+        </div>
     </nav>
 
-    <main style="width: 100%;">
+    <div class="container">
         <h2>Quiénes somos</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla molestie lobortis. Curabitur eget interdum ipsum, 
@@ -55,22 +110,14 @@
             Nunc iaculis ligula sed velit auctor accumsan. Etiam erat tellus, congue a lacinia ac, auctor non urna. Ut metus nibh, vulputate ac 
             libero ac, semper lacinia lorem. Phasellus non pellentesque risus. Sed sit amet auctor lacus.
         </p>
-    </main>
-
+    </div>
     <footer>
         Todos los derechos reservados &copy; 2020
-        <div style="float:right;">
-            <div class="tooltip"><i class="fa fa-github" aria-hidden="true"></i>
-                <span class="tooltiptext">GITHUB</span>
-            </div>
-            <div class="tooltip"><i class="fa fa-linkedin" aria-hidden="true"></i>
-                <span class="tooltiptext">LINKEDIN</span>
-            </div>
-            <div class="tooltip"><i class="fa fa-twitter" aria-hidden="true"></i>
-                <span class="tooltiptext">TWITTER</span>
-            </div>
-        </div>
+        <div style="float:right;">       
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i> 
+        </main>
     </footer>
-
 </body>
 </html>

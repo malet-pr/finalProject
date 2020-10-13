@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo Práctico Final - HOME</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> 
     <link href="css/base.css" rel="stylesheet" type="text/css">
-    <script src="https://kit.fontawesome.com/97359fe2a8.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit=no>
+    <script src="https://kit.fontawesome.com/97359fe2a8.js" data-auto-replace-svg="nest" crossorigin="anonymous"></script>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="flex-container">
@@ -16,6 +16,7 @@
         <div style="flex-grow:1; background-image:url('img/chris-liverani-9cd8qOgeNIY-unsplash.jpg');
         background-size: cover; background-position: center; color:transparent;">........</div>
     </header>
+
     <nav>
         <ul>
             <li><a href="index.html">INICIO</a></li>
@@ -25,10 +26,11 @@
             <li><a href="contact.html">CONTACTO</a></li>
         </ul>
     </nav>
+
     <main>
         <article class="flex-container-row">
             <div style="width: 40%; float: left; margin: auto;">
-                <figure>
+                <figure style="padding-left: 1rem;">
                     <iframe src="https://gifer.com/embed/137l" width="100%" 
                     height="200vw" frameBorder="0" allowFullScreen=""></iframe>
                     <figcaption style="font-size: 0.7rem;">
@@ -36,13 +38,13 @@
                     </figcaption>
                 </figure>
             </div>
-            <div style="width: 60%; float: right; padding-right: 1rem;">
+            <div style="width: 60%; float: right; padding: 1rem;">
                 <h2>Consultoría de economía y finanzas</h2>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, exercitationem fugiat sit fugit sapiente dolorem libero doloribus, illo maiores alias corporis est sunt quis minus maxime hic id autem esse.
             </div>
         </article>
         <article class="flex-container-row">
-            <div style="width: 60%; float: left; padding-left: 1rem;">
+            <div style="width: 60%; float: left; padding: 1rem;">
                 <h2>Trabajos de analytics y aprendizaje automático</h2>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, exercitationem fugiat sit fugit sapiente dolorem libero doloribus, illo maiores alias corporis est sunt quis minus maxime hic id autem esse.
             </div>
@@ -73,6 +75,11 @@
     <footer>
         Todos los derechos reservados &copy; 2020  
         <div style="float:right;">
+
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <!--
             <div class="tooltip"><i class="fa fa-github" aria-hidden="true"></i>
                 <span class="tooltiptext">GITHUB</span>
             </div>
@@ -82,8 +89,11 @@
             <div class="tooltip"><i class="fa fa-twitter" aria-hidden="true"></i>
                 <span class="tooltiptext">TWITTER</span>
             </div>
+            -->
         </div>
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 </body>
 </html>

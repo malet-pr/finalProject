@@ -4,7 +4,7 @@
 @font-face{font-family: 'Grenze Gotisch';src:url("../css/fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf");}
 @font-face{font-family: "Kufam";src:url("../css/fonts/Kufam/Kufam-Italic-VariableFont_wght.ttf");}
 
-* {
+*{
   box-sizing: border-box;
 } 
 html{
@@ -85,7 +85,7 @@ p {
   text-align: justify;
   padding: 0.5rem;
 }
-main {
+main{
   margin-top: 28vh;
   margin-left: 0;
   margin-bottom: 2rem;
