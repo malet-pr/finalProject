@@ -1,34 +1,45 @@
 @font-face{font-family: 'Grenze Gotisch';src:url("../css/fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf");}
 @font-face{font-family: "Kufam";src:url("../css/fonts/Kufam/Kufam-Italic-VariableFont_wght.ttf");}
 
-.d-flex{
+header{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    height: 18vh;
     z-index: 10;
     background-color: brown;
     color: bisque;
-    text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-align: center;
     font-family:'Grenze Gotisch', cursive;
-    padding-top: 1rem;
 }
-.d-flex > div{
-    background-color: brown;
-    color: bisque;
-    text-align: center;
-    font-size: 2.5rem;
-    text-align: center;
-    font-family:'Grenze Gotisch', cursive;
-    padding-top: 1rem;
+body{
+    padding: 2rem;
+    margin: 0px;
+    background-color: burlywood;
+}
+a{
+    color: brown;
+}
+a:hover{
+    background-color: bisque;
+    color: brown;
+}
+a:active {
+    background-color: bisque;
+    color: rgb(116, 12, 12);
 }
 nav {
     position: fixed;
     width: 100%;
-    top: 21vh;
+    top: 18vh;
     right: 0;
     z-index: 10;
     background-color: orangered;
     font-family: 'Kufam', cursive;
-    height: 7vh;
+    font-weight: 900;
 }  
 nav ul {
     text-align: center;
@@ -39,18 +50,14 @@ nav ul {
 nav li {
     display: inline-block;
     font-size: 1rem;
-    padding: 0.5em;
 }
-nav li a{
-text-decoration: none;
-} 
 .container {
     font-size: min(max(1rem, 4vw), 22px); 
     background-color:  burlywood;
     color: rgb(64, 57, 66);
     font-family: verdana;
     text-align: justify;
-    padding: 0.5rem;
+    margin-top: 25vh;
 }
 footer {
     clear: both;
@@ -71,17 +78,4 @@ footer {
 .fa:hover{
     opacity: 0.5;
 }
-nav a {
-    color: bisque;
-}
-a{
-    color: brown;
-}
-a:hover{
-    background-color: bisque;
-    color: darkgoldenrod;
-}
-a:active {
-    background-color: bisque;
-    color: rgb(116, 12, 12);
-}
+

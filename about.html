@@ -3,81 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Trabajo Práctico Final - ABOUT US</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="css/pruebaNav.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/97359fe2a8.js" data-auto-replace-svg="nest" crossorigin="anonymous"></script>    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,600&display=swap');
-        body{
-            background-color: burlywood;
-            padding-bottom: 2.5rem;
-            padding-top: 13rem;
-        }
-        nav {
-            background-color: orangered;
-            color: bisque;
-            font-family: 'Kufam', cursive;
-        }  
-        footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            z-index: 10;
-            width: 100%;
-            background-color: brown;
-            color: bisque;
-            font-family: 'Kufam', cursive; 
-            padding: 0.5em;
-        }
-        .fa {
-            padding: 0 1rem;
-            width: auto;
-        }
-        .fa:hover{
-            opacity: 0.5;
-        }
-        .d-flex{
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 10;
-            height: 21vh;
-            background-color: brown;
-            color: bisque;
-            text-align: center;
-            font-size: clamp(1rem, -0.8750rem + 8.3333vw, 3.5rem);
-            text-align: center;
-            font-family:'Grenze Gotisch', cursive;
-        }
-    </style>
 </head>
 <body>
-    <div class="d-flex">
-        <div style="flex-grow:1; background-image:url('img/kobu-agency-7okkFhxrxNw-unsplash.jpg');
+    <header>
+        <div style="width: 20%; height: 18vh; float: left; background-image:url('img/kobu-agency-7okkFhxrxNw-unsplash.jpg');
         background-size: cover; background-position: center; color:transparent;">........</div>
-        <div style="flex-grow:3; padding-top: 1rem;">SOBRE NOSOTROS</div>
-        <div style="flex-grow:1; background-image:url('img/green-chameleon-s9CC2SKySJM-unsplash.jpg');
+        <div style="width: 20%; height: 18vh; float: right; background-image:url('img/green-chameleon-s9CC2SKySJM-unsplash.jpg');
         background-size: cover; background-position: center; color:transparent;">........</div>
-    </div>  
+        <div style="padding-top: 1rem;">SOBRE NOSOTROS</div>
+    </header>  
     
-    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="top: 21vh;">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="top: 18vh;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegacion"
             aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navegacion">
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="index.html" style="color: bisque;">INICIO</a></li>
-            <li class="nav-item active"><a class="nav-link" href="about.html" style="color: burlywood;">SOBRE NOSOTROS</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html" style="color: bisque;">SERVICIOS</a></li>
-            <li class="nav-item"><a class="nav-link" href="publicaciones.html" style="color: bisque;">PUBLICACIONES</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html" style="color: bisque;">CONTACTO</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+            <li class="nav-item active"><a class="nav-link" href="about.html" >SOBRE NOSOTROS</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">SERVICIOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="publicaciones.html">PUBLICACIONES</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">CONTACTO</a></li>
           </ul>
         </div>
     </nav>
