@@ -28,8 +28,7 @@ a:hover{
     color: brown;
 }
 a:active {
-    background-color: bisque;
-    color: rgb(116, 12, 12);
+    color: darkred;
 }
 nav {
     position: fixed;
